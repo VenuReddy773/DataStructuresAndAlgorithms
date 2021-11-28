@@ -1,5 +1,4 @@
-﻿using DatastructuresAndAlgorithms.Utility;
-using System;
+﻿using System;
 
 namespace DatastructuresAndAlgorithms
 {
@@ -7,9 +6,24 @@ namespace DatastructuresAndAlgorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            BankingCashCounter bank = new BankingCashCounter();
-            bank.Counter();
+            Console.WriteLine("Welcome to Data Structures And Alogorithm Programs...");
+            bool flag = true;
+            while (flag)
+            {
+                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.Exit\n");
+                int option = Convert.ToInt32(Console.ReadLine());
+                switch (option)
+                {
+                    case 1:
+                        UnOrderedList unordered = new UnOrderedList();
+                        unordered.Read();
+                        unordered.Search("R");
+                        break;
+                    case 2:
+                        flag = false;
+                        break;
+                }
+            }
         }
     }
 }

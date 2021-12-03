@@ -10,7 +10,7 @@ namespace DatastructuresAndAlgorithms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.BalancedParanthesi\n 4.Exit\n");
+                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.BalancedParanthesi\n 4.Bubblesort\n 5.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -29,6 +29,10 @@ namespace DatastructuresAndAlgorithms
                         result.Read();
                         break;
                     case 4:
+                        BubbleSort sort = new BubbleSort();
+                        sort.CheckBubbleSort();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }

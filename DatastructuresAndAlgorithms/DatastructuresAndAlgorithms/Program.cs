@@ -10,7 +10,7 @@ namespace DatastructuresAndAlgorithms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.Exit\n");
+                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.BalancedParanthesi\n 4.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -25,6 +25,10 @@ namespace DatastructuresAndAlgorithms
                         ordered.Search(2);
                         break;
                     case 3:
+                        BalancedParanthesis  result = new BalancedParanthesis();
+                        result.Read();
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }

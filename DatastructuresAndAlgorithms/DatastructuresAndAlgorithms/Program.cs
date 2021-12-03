@@ -10,7 +10,7 @@ namespace DatastructuresAndAlgorithms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.BalancedParanthesi\n 4.Bubblesort\n 5.Exit\n");
+                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.BalancedParanthesi\n 4.Bubblesort\n 5.PrimeNumbers\n 6.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -33,6 +33,10 @@ namespace DatastructuresAndAlgorithms
                         sort.CheckBubbleSort();
                         break;
                     case 5:
+                        PrimeNumbers numbers = new PrimeNumbers();
+                        numbers.Prime();
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }

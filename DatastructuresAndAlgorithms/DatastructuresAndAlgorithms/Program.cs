@@ -10,7 +10,7 @@ namespace DatastructuresAndAlgorithms
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.BalancedParanthesi\n 4.Bubblesort\n 5.PrimeNumbers\n 6.Exit\n");
+                Console.WriteLine("\nChoose an Option : \n 1.Unordered List\n 2.OrderedList\n 3.BalancedParanthesi\n 4.Bubblesort\n 5.PrimeNumbers\n 6.Anagram\n 7.Exit\n");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -37,6 +37,10 @@ namespace DatastructuresAndAlgorithms
                         numbers.Prime();
                         break;
                     case 6:
+                        Anagram check = new Anagram();
+                        check.AnagramCheck();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
